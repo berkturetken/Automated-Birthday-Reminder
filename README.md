@@ -15,11 +15,11 @@
     1. Open the project in your favorite IDE or code editor
     2. [Suggestion] Create a new Gmail or Hotmail account for security reasons that are explained later in the document
     3. Replace the constants' values with your own credentials (i.e., ***MY_EMAIL***, ***PWD***, ***RECEIVER_EMAIL***)
-    4. If your email provider is different than Gmail, then find its SMPT information from the internet and change ***line#32*** in the code accordingly. Some of the common email providers are listed here:
+    4. If your email provider is different than Gmail, then find its SMTP information from the internet and change ***line#32*** in the code accordingly. Some of the common email providers are listed here:
     
-        Gmail           | Hotmail        | Yahoo
-        --------------- | -------------- | --------------------
-        smtp.gmail.com  | smtp.live.com  | smtp.mail.yahoo.com
+        Gmail           | Hotmail        | Yahoo                | Airmail
+        --------------- | -------------- | -------------------- | --------------------
+        smtp.gmail.com  | smtp.live.com  | smtp.mail.yahoo.com  | mail.airmail.net
     5. [Suggestion] Edit the email message in ***line#38*** if you would like to change the content of the email. In other words, do as you please!
     6. Run the project: ***python3 main.py***
 4. If you do not encounter an error, that's perfect :) Otherwise, check the bullet points below if you are trying to send an email from Gmail:
