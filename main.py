@@ -2,10 +2,15 @@
 import datetime as dt
 import pandas
 import smtplib
+from dotenv import load_dotenv
+import os
 
 # CONSTANTS
-MY_EMAIL = "berkturetken1@gmail.com"
-PWD = "BRh8$LSm55#so)r2"
+local_key_path = "C:/Programming/Keys/key.txt"
+load_dotenv(local_key_path)
+
+MY_EMAIL = os.getenv("berkturetken1_gmail")
+PWD = os.getenv("berkturetken1_pwd")
 RECEIVER_EMAIL = "berkturetken@sabanciuniv.edu"
 
 # Read the csv file
