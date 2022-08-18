@@ -5,10 +5,14 @@ import smtplib
 from dotenv import load_dotenv
 import os
 
-# CONSTANTS
+# 1) Loading environment variables in local
 local_key_path = "C:/Programming/Keys/key.txt"
 load_dotenv(local_key_path)
+# 2) Loading environment variables in PythonAnywhere
+# local_key_path = os.path.expanduser('~')
+# load_dotenv(os.path.join(local_key_path, '.env'))
 
+# Constants
 MY_EMAIL = os.getenv("berkturetken1_gmail")
 PWD = os.getenv("berkturetken1_pwd")
 receiver_emails = ["berk.turetken@aalto.fi", "buket.karakas@aalto.fi", "gokktugbasaran@gmail.com"]
