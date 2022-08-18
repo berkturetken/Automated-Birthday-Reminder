@@ -47,4 +47,4 @@
 
 ----
 
-If you have any questions or problems, reach me out: berkturetken@sabanciuniv.edu :+1:
+If you have any questions or problems, reach me out: berk.turetken@aalto.fi :+1:
