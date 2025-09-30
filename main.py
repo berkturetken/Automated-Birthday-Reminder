@@ -1,4 +1,3 @@
-# ---------- Automated Birthday Reminder (ABR) ----------
 import datetime as dt
 import pandas
 import smtplib
@@ -15,7 +14,7 @@ load_dotenv(local_key_path)
 # Constants
 MY_EMAIL = os.getenv("berkturetken1_gmail")
 PWD = os.getenv("berkturetken1_pwd")
-receiver_emails = ["berk.turetken@aalto.fi", "buket.karakas@aalto.fi", "gokktugbasaran@gmail.com"]
+receiver_emails = ["berkturetken1997@hotmail.com", "gokktugbasaran@gmail.com", "samiavger@gmail.com"]
 
 # Read the csv file
 data = pandas.read_csv("docs/birthdays.csv")
@@ -48,4 +47,3 @@ for person in people_birthday_dates:
                     to_addrs=receiver,
                     msg=f"Subject:Birthday Reminder!\n\n{letter_final_version}"
                 )
-
