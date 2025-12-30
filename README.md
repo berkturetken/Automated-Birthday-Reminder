@@ -10,11 +10,11 @@
         ----- | ----- | ----
         jake  |   1   |  15
         amy   |   11  |  8
-    2. Place the file inside the ***docs*** folder in the project. Note that there is no birthdays.csv file not to leak any (maybe even sensitive?) information.
-3. Before running the code in the cloud for automation, you can try in your local machine:
+    2. Place the file inside the ***docs*** folder in the project. Note that there is no ***birthdays.csv*** file available in the repository not to leak any (maybe even sensitive?) information.
+3. If you would like to test the script in your local machine, follow the steps below:
     1. Open the project in your favorite IDE or code editor.
     2. [Suggestion] Create a new Gmail or Hotmail account for security reasons that are explained later in the document.
-    3. Replace the constant values with your own credentials (i.e., ***MY_EMAIL***, ***PWD***, ***RECEIVER_EMAIL***).
+    3. Create your own ***.env*** file and put the values for the ***berkturetken1_gmail*** and ***berkturetken1_pwd*** fields which corresponds to the ***MY_EMAIL*** and ***PWD*** global variables in the code, respectively.
     4. If your email provider is different than Gmail, then find its SMTP information from the internet and change ***line#41*** in the code accordingly. Some of the common email providers are listed here:
     
         Gmail           | Hotmail        | Yahoo                | Airmail
@@ -28,23 +28,11 @@
     3.  Make sure you enter the correct email provider.
     4.  Make sure you enabled ***Less Secure Apps*** from Gmail settings. Go to Gmail → Click on top-right corner → Manage Your Google Account → Security → Scroll down → Turn on Less Secure App Access. Enabling ***Less Secure App Access*** makes your account more vulnerable. Therefore, I highly recommend you to create a new (dummy) account!
     5.  Go to the following website: https://accounts.google.com/DisplayUnlockCaptcha. Click ***Continue*** and then you should see ***Account access enabled*** message.
-    6.  Change the port number in ***line#41***. Normally, no need for a port number but that didn't work in my case...
+    6.  Change the port number in the following line: `with smtplib.SMTP("smtp.gmail.com", port=587) as connection`. Normally, no need for a port number but that didn't work in my case...
     7.  If you come to this step, sorry but ran out of solution :(
  5. [Suggestion] If you do not encounter an error but also cannot see the email, check your spam folder.
- 6. Time to run this Python code in the cloud
-    1. Create an account in https://www.pythonanywhere.com/.
-    2. Go to the ***Files*** section.
-    3. Uplaod the file ***main.py***.
-    4. Create a new directory called ***docs*** from the left pane.
-    5. Upload the files ***birthdays.csv*** and ***letter.txt***.
-    6. Go to the ***Consoles*** section and click on ***Bash***.
-    7. Type ***python3 main.py*** to the console to run our code once again.
-    8. If there is no error, the email should be visible on the receiver side (i.e., ***RECEIVER_EMAIL***).
-    9. Go to the ***Tasks*** section and schedule your task.
-    10. Determine the time (notice that it is UTC) and type `python3 main.py` to the small command window
-    11. Click on the ***Create*** button and you are good to go :)
-7. If everything went well until this point and someone's birthday is on that day, the ***ABR*** reminds you via email :100:
+6. If everything went well until this point and someone's birthday is on that day, the ***ABR*** reminds you via email :100:
 
 ----
 
-If you have any questions or problems, reach me out: berkturetken1@gmail.com :+1:
+If you have any questions or problems, reach me out via berkturetken1@gmail.com :+1:
