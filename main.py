@@ -4,12 +4,7 @@ import smtplib
 from dotenv import load_dotenv
 import os
 
-# 1) Loading environment variables in local
-local_key_path = "C:/Programming/Keys/key.txt"
-load_dotenv(local_key_path)
-# 2) Loading environment variables in PythonAnywhere
-# local_key_path = os.path.expanduser('~')
-# load_dotenv(os.path.join(local_key_path, '.env'))
+load_dotenv()
 
 # Constants
 MY_EMAIL = os.getenv("berkturetken1_gmail")
