@@ -1,9 +1,30 @@
+# Virtual environments
+venv/
+env/
 
-*.csv
-.env
-/venv
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python
 __pycache__/
-*.pyc
+*$py.class
+*.so
+.Python
+
+# Environment variables
+.env
+.env.local
+
+# Logs
 *.log
 
-.idea/
+# OS
+.DS_Store
+Thumbs.db
+
+# Other
+*.csv
+*.pyc
