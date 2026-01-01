@@ -20,7 +20,7 @@ now = dt.datetime.now()
 current_month = now.month
 current_day = now.day
 
-# Check whether today is someone's birthday
+print(f"------------------------------------------------------------------------------\n{now} - Checking whether today is someone's birthday...")
 for person in people_birthday_dates:
     if current_month == person["month"] and current_day == person["day"]:
         print(person)
